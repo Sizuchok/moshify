@@ -142,4 +142,25 @@ a{
     }
 }
 
+/* Icons */
+.icon-container{
+    background: #f3f9fa;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /*TODO: shrink size to Mosh's, maybe*/
+    height: 80px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary{
+    fill: var(--primary-color);
+}
+
+
 
