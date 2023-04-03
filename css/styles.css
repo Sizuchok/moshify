@@ -4,6 +4,7 @@
     --accent-color: #ff3400;
     --headings-color: #1b0760;
     --text-color: #918ca4;
+    --border-color: #ccc;
 }
 
 *, *::after, *::before{
@@ -217,6 +218,43 @@ a{
 
 @media screen and (min-width: 1024px) {
     .btn{
+        font-size: 1.5rem;
+    }
+}
+
+/* Inputs */
+.input{
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    color: var(--headings-color);
+    font-size: 2rem;
+    outline: none;
+    padding: 2rem 3.5rem;
+}
+
+::placeholder{
+    font-size: 2rem;
+}
+
+.input-group{
+    /* border: 1px solid var(--border-color); */
+    box-shadow: 0 0 50px var(--border-color);
+    border-radius: 30px;
+    display: flex;
+}
+
+.input-group .input{
+    border: none;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn{
+    margin: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .input, ::placeholder{
         font-size: 1.5rem;
     }
 }
