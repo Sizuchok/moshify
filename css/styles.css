@@ -166,6 +166,7 @@ a{
 
 .icon--primary{
     fill: var(--primary-color);
+    /* color:#126DE4; */
 }
 
 /* Buttons */
@@ -294,11 +295,6 @@ a{
     color: #fff;
 }
 
-.wrap{
-    margin: 4rem;
-    width: 450px;
-}
-
 /* Plans */
 .plan__name{
     color: #fff;
@@ -341,4 +337,21 @@ a{
     .plan__billing-cicle, .plan__description{
         font-size: 1.4rem;
     }
+}
+
+/* Media Objects */
+.media{
+    display: flex;
+}
+
+.media__title{
+    margin-top: 0;
+}
+
+.media__body{
+    margin: 0 2rem;
+}
+
+.media__image{
+    margin-top: 1.5rem;
 }
