@@ -232,6 +232,10 @@ a{
     background:#ff4a1c;
 }
 
+.btn--stretched{
+    padding: 2rem 9rem;
+}
+
 @media screen and (min-width: 1024px) {
     .btn{
         font-size: 1.5rem;
@@ -417,7 +421,7 @@ a{
     display: grid;
 }
 
-@media screen and (min-width: 728px){
+@media screen and (min-width: 768px){
     .grid__1x2{
         grid-template-columns: repeat(2, 1fr); 
     }
@@ -450,7 +454,7 @@ a{
     right: -40px;
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
     .testimonial .quote__text,
     .testimonial .quote__author
     {
@@ -459,5 +463,41 @@ a{
 
     .testimonial .quote__company{
         font-size: 1.6rem;
+    }
+}
+
+/* Callouts */
+.callout{
+    padding: 5rem 4rem;
+    border-radius: 7px;
+}
+
+.callout--primary{
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+
+.callout__heading{
+    color:#fff;
+    margin-top: 0;
+}
+
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout--primary{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin-left: 3rem;
+    }
+
+    .callout .grid__1x2{
+        grid-template-columns: 1fr auto;
     }
 }
