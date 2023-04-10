@@ -19,24 +19,17 @@
     <title>Moshify</title>
   </head>
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Header 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ipsa
-          quisquam modi?
-        </p>
-      </header>
-    </section>
-    <section class="block block--black block--skewed-right">
-      <div class="container">
-        <h2 class="block__heading block__heading--white">Header 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ipsa
-          quisquam modi?
-          
-        </p>
-      </div>
-    </section>
+    <nav class="nav collapsible">
+      <a href="#"><img src="./images/logo.svg" alt="A site's logo" /></a>
+      <svg class="icon icon--white nav__icon collapsible__launcher">
+        <use xlink:href="./images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
