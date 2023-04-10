@@ -171,7 +171,6 @@ a{
 
 .icon--primary{
     fill: var(--primary-color);
-    /* color:#126DE4; */
 }
 
 .icon--white{
@@ -500,4 +499,43 @@ a{
     .callout .grid__1x2{
         grid-template-columns: 1fr auto;
     }
+}
+
+/* Collapsibles */
+.collapsible{
+    width: 300px;
+}
+
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__header:hover{
+    cursor: pointer;
+}
+
+.collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible__heading{
+    margin: 0;
+}
+
+.collapsible__chevron{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron{
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content{
+    max-height: 100%;
+    opacity: 1;
 }
