@@ -629,3 +629,34 @@ a{
         border: 0;
     }
 }
+
+/* Hero */
+.hero{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__banner{
+    width: 100%;
+}
+
+.hero__heading{
+    line-height: 1.1;
+}
+
+.hero__tagline{
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    color: #b9c3cf;
+}
+
+@media screen and (min-width: 768px) {
+    .hero{
+        padding-top: 0;
+    }
+
+    .hero__content{
+        align-self: center;
+        text-align: left;
+    }
+}
