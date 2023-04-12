@@ -90,9 +90,13 @@ a{
 .badge{
     border-radius: 20px;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0.8rem 2.2rem;
     white-space: nowrap;
+}
+
+.badge--clickable{
+    cursor: pointer;
 }
 
 .badge--primary{
@@ -124,7 +128,6 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-    margin: 0;      /*TODO: delete maybe*/
     color: var(--headings-color);
 }
 
@@ -190,9 +193,17 @@ a{
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    padding: 1.5rem 3rem;
+    outline: 0;
+    padding: 2rem 3rem;
     text-transform: uppercase;
     text-align: center;
+}
+
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn:hover{
@@ -207,7 +218,6 @@ a{
 .btn--primary{
     color: var(--headings-color);
     background: #fff;
-    border: 2px solid var(--headings-color);
 }
 
 .btn--primary:hover{
@@ -243,29 +253,29 @@ a{
 
 /* Inputs */
 .input{
-    border-radius: 30px;
-    border: 1px solid var(--border-color);
+    border-radius: 40px;
     color: var(--headings-color);
     font-size: 2rem;
     outline: none;
-    padding: 2rem 3.5rem;
+    padding: 1.5rem 3.5rem;
 }
 
 ::placeholder{
     font-size: 2rem;
+    font-weight: 300;
+    opacity: 0.3;
 }
 
 .input-group{
-    /* border: 1px solid var(--border-color); */
-    box-shadow: 0 0 50px var(--border-color);
-    border-radius: 30px;
+    border-radius: 40px;
     display: flex;
 }
 
 .input-group .input{
     border: none;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 4rem;
+    width: 0;
 }
 
 .input-group .btn{
@@ -588,7 +598,6 @@ a{
 
 .nav__item{
     padding: 0 2rem;
-    border-bottom: 1px solid #222;
 }
 
 .nav__item > a{
@@ -658,5 +667,34 @@ a{
     .hero__content{
         align-self: center;
         text-align: left;
+    }
+}
+
+/* Domain */
+.block-domain .input-group{
+    border: 0;
+    box-shadow: 0 0 30px 20px #e6ebee;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__list{
+    display: grid;
+    grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .block-domain__list{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        font-size: 1.5rem;
+    }
+
+    .block-domain__list .badge{
+        font-size: 1.5rem;
     }
 }
