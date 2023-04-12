@@ -90,7 +90,7 @@ a{
 .badge{
     border-radius: 20px;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     padding: 0.8rem 2.2rem;
     white-space: nowrap;
 }
@@ -217,6 +217,7 @@ a{
 
 .btn--primary{
     color: var(--headings-color);
+    border: 1px solid var(--headings-color);
     background: #fff;
 }
 
@@ -338,8 +339,30 @@ a{
     font-weight: 300;
 }
 
+.plan{
+    transition: all 0.3s;
+}
+
+.plan--popular{
+    transform: scale(1.1);
+}
+
+
+.plan:hover{
+    transform: scale(1.1);
+}
+
+.plan--popular:hover{
+    transform: scale(1.15);
+}
+
 .card--primary  .badge--primary{
     background:#126DE4;
+    text-transform: uppercase;
+}
+
+.card--secondary .badge--secondary{
+    background: #03c2e3;
     text-transform: uppercase;
 }
 
@@ -697,4 +720,14 @@ a{
     .block-domain__list .badge{
         font-size: 1.5rem;
     }
+}
+
+/* Plans block */
+.block-plans .grid{
+    gap: 8rem 4rem;
+}
+
+.block-plans .card{
+    max-width: 50rem;
+    margin: 0 auto;
 }
