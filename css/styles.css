@@ -68,6 +68,7 @@ a{
     color: var(--accent-color);
     font-size: 2rem;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .link-arrow::after{
@@ -607,11 +608,11 @@ a{
 
 /* Navigation bars */
 .nav{
+    align-items: center;
     background:#000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 2rem;
 }
 
@@ -730,4 +731,25 @@ a{
 .block-plans .card{
     max-width: 50rem;
     margin: 0 auto;
+}
+
+/* Features */
+.feature{
+    align-items:center;
+    gap: 4rem 8rem;
+    margin: 6rem 0;
+}
+
+.feature__image{
+    width: 100%;
+}
+
+.feature__heading{
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content{
+        order: 2;
+    }
 }
