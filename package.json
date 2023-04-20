@@ -1,0 +1,15 @@
+{
+  "name": "moshify",
+  "version": "1.0.0",
+  "description": "A remake of Moshify web page from Mosh's HTML & CSS course",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Illia Sizhuk",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

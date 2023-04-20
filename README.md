@@ -1,2 +1,2 @@
 # moshify
-A remake of Moshify web page from Mosh's HTML & CSS course
+A remake of the Moshify web page from Mosh's Hamedani HTML & CSS course.
